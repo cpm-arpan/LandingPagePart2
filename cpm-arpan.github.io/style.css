@@ -1,0 +1,699 @@
+/* Landing Page css 
+=========================================================////=======================================////=================================== */
+@font-face {
+    font-family: 'architype_bold';
+    src: url('webfontkit-20230221-020521/archityperenner-bold-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_demi';
+    src: url('webfontkit-20230221-020521/archityperenner-demi-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_medium';
+    src: url('webfontkit-20230221-020521/archityperenner-medium-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'architype_regular';
+    src: url('webfontkit-20230221-020521/archityperenner-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-020521/archityperenner-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_regular';
+    src: url('webfontkit-20230221-021519/twcenclassmtstd-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenclassmtstd-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_bold';
+    src: url('webfontkit-20230221-021519/twcenmtstd-bold-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenmtstd-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tw_medium';
+    src: url('webfontkit-20230221-021519/twcenmtstd-mediumcond-webfont.woff2') format('woff2'),
+         url('webfontkit-20230221-021519/twcenmtstd-mediumcond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'slickbold';
+    src: url('slick-webfont.woff2') format('woff2'),
+         url('slick-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+:root{
+    --light-green:#048f60;
+    --dark-green:#047b53;
+    --yellow:#fef661;
+    --light-black:#9c9b9d;
+    }
+h2{
+    color:black;
+    font-family: architype_demi;
+    font-size: 48px;
+}
+h3{
+    font-family: architype_demi;
+}
+button{
+    border: none;
+}
+p{
+    font-family: tw_regular;
+}
+
+/*Navigation bar css ====================================================================================== */
+/* .lp-navigation-bar{
+    background-image: url("top1.jpg");
+    background-repeat: no-repeat;
+    background-size:250px;
+    background-position-x:80px ;
+    background-position-y:20px ;
+    
+    
+} */
+ 
+.smarTech{
+    color: var(--dark-green);
+}
+.navbar-brand{
+    font-family: 'architype_demi';
+    font-size: 48px;
+    padding:35px 5px 15px;
+    
+    
+}
+
+.logo-bg img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 330px;
+    height: auto;
+}
+    
+
+.navbar-light .navbar-nav .nav-link{
+    list-style-type: none;
+    color: #000000;
+    font-family: 'tw_regular';
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--dark-green);
+}
+.lp-navigation ul {
+    gap:10px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--dark-green);
+    
+}
+.navbar-light .navbar-nav .nav-link.active::after{
+    content: '\f111';
+    font-family: fontawesome;
+    display: block;
+    text-align: center;
+    font-size: 5px;
+}
+@media only screen and (max-width: 991px){
+    .navbar-light .navbar-nav .nav-link.active::after{
+        display: none;
+    }  
+}
+/*Nav section end============================================================== */
+
+/*Banner-section start========================================================= */
+.lp-banner-title{
+    color: var(--dark-green);
+    margin-top:7em;
+}
+.lp-banner-heading h2{
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: bolder;
+    font-family: 'architype_demi';
+
+}
+.lp-banner-description p{
+    font-size: 12px;
+font-weight:500;
+}
+.lp-button-first{
+    background-color: var(--dark-green);
+    color: white;
+    width: 11.25em;
+    height: 3.25em;
+    border-radius:10px;
+}
+.lp-button-first a{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+.lp-button-first .lp-button-contents{
+    text-align: center;
+}
+
+
+.lp-button-first{
+    display: flex;
+    padding: 10px;
+}
+.learn-more-button{
+    margin-left: 1.5em;
+}
+.lcd-tv{
+    float: right;
+}
+.lp-horizontal-line-1{
+    margin-top: 4em;
+    border-top: 2px solid var(--dark-green);
+}
+.lp-horizontal-line-1 h4,.lp-horizontal-line-2 h4{
+    padding-top: 2em;
+    color: var(--dark-green);
+    font-family: 'tw_bold';
+    font-size:20px;
+    font-weight: 100;
+
+}
+.lp-horizontal-line-2{
+    margin-top: 4em;
+    border-top: 2px solid var(--dark-green);
+    margin-left: 3em;
+}
+.lp-horizontal-line-1 p, .lp-horizontal-line-2 p{
+    font-family: 'tw_regular';
+    color: var(--light-black);
+    font-size:12px ;
+    font-weight: 100;
+}
+/* Banner section end================================================ */
+
+/* Quote section start ========================================== */
+.lp-quote-section{
+    background-color: #03724d;
+    position: relative;
+    padding: 100px;
+    margin-top: 80px;
+}
+.lp-quote-title h4, .lp-quote-topic h3, .lp-quote-description p{
+    text-align: center;
+    color: #ffffff;
+    padding-left: 3em;
+}
+.lp-quote-topic,.lp-quote-description{
+    padding-top: 1em;
+}
+
+.lp-quote-title h4{
+    color: #9cc8b9; 
+}
+.lp-quote-description p{
+    color: #d3e8df;
+}
+.lp-quote-topic h3{
+    font-size: 36px;
+}
+.quote-bg img{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 150px;
+    z-index: 2;
+    
+}
+.quote-bg1 img{
+    transform: rotate(180deg);
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*quote section end =============================//================================================ /*
+
+/*Package section start =========================//=========================== */
+.lp-package{
+    position: relative;
+}
+.package-paragraph span{
+    color: var(--dark-green);
+}
+.package-paragraph h2{
+    margin-top: 150px;
+    font-family: architype_bold;
+    font-size: 44px;
+    line-height: 1.5em ;
+    font-weight:600;
+    
+}
+
+/* for the light bulb icon ============== */
+.lightBulb{
+    color: var(--light-green);
+    background-color:#daebe4 ;
+    border-radius: 35%;
+    padding: 5px 12px 12px 12px;
+}
+.firstPackage{
+    margin-top: 125px;
+    box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+-webkit-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+-moz-box-shadow: -1px 1px 0px 4px rgba(0,0,0,0.09);
+border-radius: 8%;
+    padding-top: 20px ;
+    margin-bottom: 3.2em;
+
+    }
+.firstPackage h2, .secondPackage h2 {
+    margin-top:20px ;
+    color: rgb(37, 36, 36);
+    font-family: 'tw_bold';
+    font-size:32px ;
+    font-weight: 800px;
+}
+.firstPackage p, .secondPackage p{
+    font-family: tw_regular;
+    font-size: 12px;
+    font-weight: 400px;
+    color: var(--light-black);
+}
+.firstPackage h3 span, .secondPackage h3 span{
+    font-size: 24px;
+    font-weight: 100;
+}
+.firstPackage h3, .secondPackage h3{
+    font-size: 38px;
+    font-weight: 700;
+}
+.secondPackage{
+    /* background-color: var(--dark-green); */
+    margin-top: 150px;
+    border-radius: 8%;
+    padding-top: 20px;
+    padding-bottom: 1.5em;
+    border: 2px solid whitesmoke;
+}
+
+.diamond{
+    color: var(--light-green);
+    background-color:#daebe4 ;
+    border-radius: 35%;
+    padding: 5px 12px 12px 12px;
+}
+.package-section-bg img{
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+/*After hover effects for packages=================== */
+.firstPackage:hover, .secondPackage:hover {
+    background-color:var(--dark-green);
+}
+.secondPackage:hover h2, .secondPackage:hover h3, .secondPackage:hover p,
+.firstPackage:hover h2, .firstPackage:hover h3, .firstPackage:hover p
+{
+    color: white;
+}
+.firstPackage:hover .lp-button-first button, .secondPackage:hover .lp-button-first button{
+    background-color: white;
+    color: var(--dark-green);
+}
+/*Package section end==========================//============== /*
+
+/* About us section start=====================//============== */
+.lp-about-us h3{
+    text-align: center;
+    margin-top: 120px;
+    color: var(--dark-green);
+}
+.lp-about-us h2{
+    text-align: center;
+    font-weight:900;
+    font-size: 48px;
+}
+.lp-about-us p{
+    text-align: center;
+    font-size: 12px;
+}
+.lp-about-us p span{
+    font-weight: 900;
+}
+/*about us section end ===============================//-====== /*
+
+/* Services section start==================//=============== */
+.monthly-report p,.customer-service p, .planning-consultation p{
+    font-size: 11px;
+    font-weight:500;
+    color: var(--light-black);
+
+}
+.monthly-report,.customer-service,.planning-consultation {
+    margin-top: 90px;
+}
+
+/*Servives section end===============/=================== */
+
+/* More services section start==================================//=-======================== */
+.lp-more-services{
+    margin-top:150px ;
+}
+.qr-content, .trading-content, .credit-card-content{
+    margin-left: 4.2em;
+}
+.qr-payment img, .trading img, .credit-card{
+    width: 50px;
+    height: auto;
+}
+.qr-payment{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 60px 100px 0px;
+    border-radius: 15px;
+    
+}
+
+.virtual-credit-card,.trading-portal{
+    border: 2px solid rgb(247, 242, 242);
+    border-radius: 15px;
+}
+.lp-more-services p{
+    font-family: architype_regular;
+    font-size: 16px;
+    color:var(--light-black);
+}
+.lp-more-services i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2em;
+}
+.lp-services-image {
+    float: right;
+    margin-top: 80px;
+    margin-right: 100px;
+    
+}
+.services-bg{
+    position: absolute;
+    right: 0;
+}
+/* Service section end =========================// ============================================== */
+
+/*Products section start -----=================//================================================== */
+.lp-products{
+    margin-top: 9em;
+}
+.lp-products h3{
+    color: var(--dark-green);
+}
+.lp-products p{
+    color: var(--light-black);
+}
+.lp-products h2{
+    font-size: 38px;
+    font-weight: 900;
+}
+.lp-featured-products{
+    margin-top: 80px;
+}
+.lp-featured-products p{
+    font-family: architype_regular;
+    font-weight: 500;
+}
+.lp-featured-products .read-more{
+    color: var(--dark-green);
+    font-size: 22px;
+    font-family: tw_bold;
+}
+.lp-featured-products i{
+    color: var(--dark-green);
+}
+.carousel-cards{
+    width: 18rem;
+    border-radius: 50px;
+}
+.carousel-cards img{
+    border-radius: 50px;
+    padding: 8px;
+    width: 285px;
+    height: 200px;
+}
+.slick-prev:before {
+    color: white !important;
+    content: '\f178';
+    font-family:'fontawesome' !important;
+    background-color: #03724d;
+    padding: 12px;
+    border-radius: 10px;
+    
+  }
+  .slick-next:before {
+    color: var(--dark-green) !important;
+    content: '\f178';
+    font-family:'fontawesome' !important;
+    border: 2px solid #f6f6f5 !important;
+    font-size: 20px !important;
+    padding: 12px;
+    border-radius: 10px;
+    margin-left:-20px;
+}
+.slick-next{
+    left: 16px !important;
+}
+/* End of products and featured products section==================================================== 8/
+
+Start of testimonial section ================================================================ */
+.lp-testimonial{
+    margin-top: 200px;
+}
+.lp-testimonial h4{
+    text-align: center;
+    color: var(--dark-green);
+    left: 100px;
+}
+.lp-testimonial h2{
+    text-align: center;
+    margin-inline-start: 400px;
+    font-size: 42px;
+}
+.testimonial-content{
+    background-color: #06a871;
+    border-radius: 35px;
+
+}
+.testimonial-content p{
+    margin-top: 30px;
+    color: white;
+    font-family: architype_regular;
+    font-style: italic;
+    word-spacing: 2px;
+    font-size: 20px;
+
+}
+.testimonial-content i{
+    color: #fef661;
+}
+.testimonial-ratings{
+    margin-top: 50px;
+}
+ul.slick-dots li button::before {
+    font-size: 20px;
+}
+.testimonial-content h3{
+    color: white;
+    margin-top: 50px;
+}
+.testimonial-content h5{
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.testimonial-content img{
+    margin-top: -150px;
+    position: relative;
+    z-index: 100;
+    overflow: visible !important;
+}
+.slick-prev:before{
+    margin-left: -30px;
+    opacity: 1 !important;
+}
+/* End of testimonial section */
+
+
+.lp-faq{
+    margin-top: 120px;
+}
+.accordion {
+    width: 800px;
+    margin-top: 35px;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+    
+
+    
+    
+  }
+  .accordion .container {
+    position: relative;
+    margin-top: 30px;
+
+    
+  }
+  
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    font-family: tw_bold;
+    font-size: 20px;
+    
+    
+   
+  }
+
+  .accordion .label::before {
+    content: "icofont-plus-circle";
+    color: var(--dark-green);
+    font-family: bootstrap-icons;
+    font-weight: 100;
+    margin-top: 15px;
+    float: right;
+    font-size: 25px;
+    transform: translateY(-50%);
+}
+.accordion-title{
+    font-size: 22px;
+}
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 16px;
+    margin-left: 60px;
+    width: 600px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: tw_medium;
+    font-weight: lighter;
+   color: var(--light-black);
+  }
+  .lp-acc{
+    border: 2px solid var(--dark-green);
+    border-radius: 30px ;
+  }
+  
+
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: auto;
+    
+  }
+  .lp-acc{
+    padding: 8px 12px;
+  }
+  .lp-acc .label .accordion-lists{
+    display: flex;
+    column-gap: 35px;
+}
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: 'bi-dash-circle';
+    font-family: bootstrap-icons;
+    font-size: 20px;
+
+    
+ }
+ .accordion .container.active .label{
+    color: var(--dark-green);
+ }
+
+
+/* footer section start ===================================================== */
+
+.footer-services{
+    display: flex;
+}
+.lp-footer-content{
+    margin-top: 200px;
+}
+.lp-footer-content h2 span{
+    color: var(--dark-green);
+}
+.lp-footer-content ul li a{
+    text-decoration: underline;
+    color: var(--light-black);
+}
+.lp-footer-content ul li{
+    list-style-type: none;
+    font-size: 14px;
+    font-family: architype_regular;
+    font-weight: 700;
+}
+.lp-footer-content ul li a:hover{
+    color: var(--dark-green);
+}
+.footer-below{
+    border-top: 2px solid var(--dark-green);
+}
+.footer-below ul{
+    display: flex;
+    column-gap: 20px;
+    width: fit-content;
+    margin-top: 15px;
+    padding-left: 0;
+}
+.social-media-links{
+    display: flex;
+}
+.social-media-links ul li a{
+    color: var(--light-green);
+    
+}
+.social-media-links a:hover{
+    color: var(--dark-green);
+}
+.social-media-links a{
+    column-gap: 20px; 
+
+}
+.social-media-links ul li{
+    list-style-type: none;
+}
